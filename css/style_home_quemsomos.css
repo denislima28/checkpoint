@@ -1,0 +1,599 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Impede que o padding faça o espaço se expandir.*/
+    font-family: Noto Serif KR;
+    text-decoration: none; /*Por algum motivo, esse comando só fez efeito sendo
+                                colocado aqui.*/
+}/*Serve para várias páginas*/
+
+.top-bar{
+    width: 100%;
+    height: auto;
+    background: #1D6672;
+    display: flex; /*Pode ser usado para deixar o logo ao lado do texto*/
+    padding: 1% 1%;
+    color: #fff;
+    justify-content: space-between;
+}/*Serve para várias páginas*/
+
+.texto_header{
+    font-size: 25px;
+    margin-left: 3%;
+    margin-top: 2%;
+}/*Serve para várias páginas*/
+
+.maos_relogio{
+    background: url('../imagens/maos_relogio.png'); /*Estamos dentro da pasta css. O .. serve para sair da pasta css e entrar na pasta imagens*/
+    background-size: cover; /*Faz a imagem até caber no banner*/
+    background-position: center; /*Ajusta a posição da imagem.*/
+    height: 100vh;
+}/*Serve para várias páginas*/
+
+.menu{
+    background: #1DB9DD;
+}/*Serve para várias páginas*/
+
+.partemenudiferente{
+     /*background: #1D6672;  Tentar em branco para ver se fica legal.*/
+    background: white;
+}/*Serve para várias páginas*/
+
+.menu ul{
+    list-style-type: none;
+    height: 100%;
+    display: flex; /*Neste caso, deixa os itens da lista um do lado do outro*/
+}/*Serve para várias páginas*/
+
+.menu ul li{
+    /*flex: 1; Faz os itens da lista terem o mesmo espaçamento*/
+     /*background: #444; pode ser usado para visualizar resultados de comandos, não no código final */
+    text-align: center; /*Ver se realmente tem efeito*/
+    padding: 1em 1.9em;
+    margin-left: auto;
+    margin-right: auto;
+}/*Serve para várias páginas*/
+
+.menu ul a{
+    color: black; /*Cor das letras*/
+    text-decoration: none; /*Tira o azul e o sublinhado dos itens da lista*/
+    font-size: 1.8em;
+    padding: 0.5em 0.5em; /*Aumenta a área clicável*/
+    /*background: red;   Usado para verificar o espaço da área clicável*/
+}/*Serve para várias páginas*/
+
+.menu ul :hover{
+    background: #FF0000;
+} 
+/*O fundo sobre o qual a palavra está só fica dessa cor quando passa o mouse.*/
+/*Serve para várias páginas*/
+
+.menu ul a:hover{
+    color: white;
+} /*Serve para várias páginas*/
+
+.alinhamento{
+    display: inline-flex;
+} /*Coloca os textos e imagens na mesma linha. Serve para várias imagens e textos da página*/
+/*Serve para várias páginas*/
+
+    /* .menu{
+        height: 80vh;
+    }
+    
+    .banner-text{
+                font-size: 0.8em;
+                width: 90%;
+            }   
+    
+    .banner-text p{
+            font-size: 1.6em;
+                } 
+    
+    .menu{
+        align-items: center;
+        flex-direction: column; /*Os itens da seção ficarão em coluna
+    }
+
+    .contact-itens form{
+        width: 90%;
+    } */
+
+
+.rodape{
+    background: #1D6672;
+    margin-top: 4em;
+    text-align: center;
+}
+
+.imagemrodape{
+    
+}
+
+.menurodape{
+    width: 100%;
+    height: auto;
+    padding: 1% 1%;
+    /*justify-content: space-between;*/
+    background: #1D6672;
+}/*Serve para várias páginas*/
+
+.menurodape ul{
+    list-style-type: none;
+    height: 100%;
+    display: flex; /*Neste caso, deixa os itens da lista um do lado do outro*/
+}/*Serve para várias páginas*/
+
+.menurodape ul li{
+    /*flex: 1; Faz os itens da lista terem o mesmo espaçamento*/
+     /*background: #444; pode ser usado para visualizar resultados de comandos, não no código final */
+    padding: 1em 1em;
+    margin-left: auto;
+    margin-right: auto;
+}/*Serve para várias páginas*/
+
+.menurodape ul a{
+    color: white; /*Cor das letras*/
+    text-decoration: none; /*Tira o azul e o sublinhado dos itens da lista*/
+    font-size: 1em;
+    padding: 0.5em 0.5em; /*Aumenta a área clicável*/
+    /*background: red;   Usado para verificar o espaço da área clicável*/
+}/*Serve para várias páginas*/
+
+/* *************************************************************************************************************
+*************************************************************************************************************
+*************************************************************************************************************
+PÁGINA HOME */
+
+/* TEXTO E IMAGEM O QUE É CHECKPOINT */
+
+.o_que_e_check_point{
+    box-shadow: 1px 1px 2px 2px black;
+    max-width: 55vw; /*Limita o tamanho máximo da largura do espaço do texto.*/
+    font-size: 1.5em;
+    text-align: justify;
+    margin-top: 4em;
+    margin-left: 4em;
+    margin-right: 1em;
+    margin-bottom: 4em;
+    padding: 1em 1em;
+}
+
+.imagem_legenda_garota{
+    margin-top: 9em;
+    margin-right: 1em;
+    margin-left: 10em;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+} /*Alinha a foto e a legenda em relação ao texto "O que é Checkpoint?*/
+
+
+.texto_legenda_garota{
+    margin-top: 0.5em;
+    text-align: center;
+    margin-right: 8em;
+} /*Alinha a legenda em relação à imagem.*/
+
+/* INÍCIO SEÇÃO FUNCIONALIDADES */
+
+.funcionalidades h2{
+    text-align: center;
+    background-color: #FF0000;
+    font-size: 3em; /*Aumenta o tamanho da fonte do h2;*/
+    color: white; /*cor da letra*/
+    text-shadow: 0 0 8px #000; /*Dá uma borda para as letras*/ 
+    max-width: 11em; /*limita o tamanho do fundo vermelho do h2*/
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: auto; 
+    margin-right: auto;
+} /*Os dois últimos comandos servem para centralizar o h2.*/
+
+.para_que_serve{
+    max-width: 45vw; /*Limita o tamanho máximo da largura do espaço do texto.*/
+    font-size: 1.5em;
+    text-align: justify;
+    margin-top: 0.5em;
+    margin-left: 4em;
+    margin-right: 1em;
+    margin-bottom: 7em;
+    padding: 1em 1em;
+}
+
+.imagem_legenda_computador_um{
+    margin-right: 1em;
+    margin-left: 10em;
+    margin-bottom: 7em;
+    display: flex;
+    flex-direction: column;
+} /*Alinha a foto e a legenda em relação ao texto "O que é Checkpoint?*/
+
+.texto_legenda_computador_um{
+    margin-top: 0.5em;
+    text-align: center;
+    margin-right: 8em;
+} /*Alinha a legenda em relação à imagem.*/
+
+/* FOTO E IMAGEM O QUE É EXATAMENTE */
+
+.imagem_legenda_computador_dois{
+    margin-right: 2em;
+    margin-left: 8em;
+    margin-bottom: 7em;
+    display: flex;
+    flex-direction: column;
+} /*Alinha a foto e a legenda em relação ao texto "O que é Checkpoint?*/
+
+.texto_legenda_computador_dois{
+    margin-top: 0.5em;
+    text-align: center;
+    margin-right: 10em;
+} /*Alinha a legenda em relação à imagem.*/
+
+.o_que_exatamente{
+    max-width: 45vw; /*Limita o tamanho máximo da largura do espaço do texto.*/
+    font-size: 1.5em;
+    text-align: justify;
+    margin-top: 0.5em;
+    margin-left: 2em;
+    margin-right: 4em;
+    margin-bottom: 7em;
+    padding: 1em 1em;
+}
+
+/* QUEM PODE USAR*/
+
+.quem_pode_usar{
+    max-width: 40vw; /*Limita o tamanho máximo da largura do espaço do texto.*/
+    font-size: 1.5em;
+    text-align: justify;
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 1em;
+    margin-bottom: 5em;
+    padding: 1em 1em;
+}
+
+
+ 
+
+    
+
+
+
+.imagem_legenda_computador_tres{
+    margin-right: 1em;
+    margin-left: 10em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+} /*Alinha a foto e a legenda em relação ao texto "O que é Checkpoint?*/
+
+.texto_legenda_computador_tres{
+    margin-top: 0.5em;
+    text-align: center;
+    margin-right: 8em;
+} /*Alinha a legenda em relação à imagem.*/
+
+
+/* SEÇÃO PLANOS DE USO */
+
+.planos_de_uso h2{
+    text-align: center;
+    background-color: #FF0000;
+    font-size: 3em; /*Aumenta o tamanho da fonte do h2;*/
+    color: black; /*cor da letra*/
+    max-width: 9em; /*limita o tamanho do fundo vermelho do h2*/
+    margin-top: 1em;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 2em;
+} /*Os dois últimos comandos servem para centralizar o h2.*/
+
+/* PLANOS DE USO */
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    font-size: 1.5em;
+    
+} /*Os dois últimos comandos centralizam a tabela*/
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 0.5em 0.4em;
+}
+
+/* ***************************************************************************
+ ***************************************************************************
+  ***************************************************************************
+   ***************************************************************************
+*************************************************************************** 
+PAGINA QUEM SOMOS*/
+
+
+/*Na parte de responsividade e configurações para tablet e etc., diminuir
+as margens entre o texto na borda e a foto*/
+
+.historia_empresa{
+    box-shadow: 1px 1px 2px 2px black;
+    max-width: 65vw; /*Limita o tamanho máximo da largura do espaço do texto.*/
+    font-size: 1.5em;
+    text-align: justify;
+    margin-top: 4em;
+    margin-left: 3em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+    padding: 1em 1em;
+}
+
+.imagem_historia_um{
+    margin-top: 10em;
+    margin-left: 5em;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+} /*Alinha a foto e a legenda em relação ao texto HISTÓRIA DA EMPRESA*/
+
+.texto_legenda_historia_um{
+    margin-top: 0.5em;
+    text-align: center;
+} /*Alinha a legenda em relação à imagem.*/
+
+.imagem_historia_dois{
+    margin-top: 3em;
+    margin-left: 5em;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+} /*Alinha a foto e a legenda em relação ao texto HISTÓRIA DA EMPRESA*/
+
+.texto_legenda_historia_dois{
+    margin-top: 0.5em;
+    text-align: center;
+} /*Alinha a legenda em relação à imagem.*/
+
+.alinhamento_imagens_historia{
+    display: flex;
+    flex-direction: column;
+}
+
+.visao_valores_cultura{
+    box-shadow: 1px 1px 2px 2px black;
+    max-width: 85vw; /*Limita o tamanho máximo da largura do espaço do texto.*/
+    font-size: 1.5em;
+    text-align: justify;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+    padding: 1em 1em;
+}
+
+/*SEÇÃO IMAGENS QUEM SOMOS*/
+
+.imagens h2{
+    text-align: center;
+    background-color: #9D20C6;
+    font-size: 3em; /*Aumenta o tamanho da fonte do h2;*/
+    color: black; /*cor da letra*/
+    max-width: 6em; /*limita o tamanho do fundo roxo do h2*/
+    margin-top: 3em;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 1em;
+} /*Os dois últimos comandos servem para centralizar o h2.*/
+
+.imagem_quem_somos{
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-left: 4em;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+} /*Ajuda a alinhar a foto e a legenda.*/
+
+.texto_legenda_quem_somos{
+    margin-top: 0.5em;
+    text-align: center;
+    margin-right: 2em;
+} /*Alinha a legenda em relação à imagem.*/
+
+.tres_imagens{
+    display: inline-flex;
+}
+
+
+/* 
+************************************************************************
+************************************************************************
+************************************************************************
+************************************************************************
+***************************600px O media screen deve ser colocado por último
+para evitar conflito nas prioridades*/  
+
+/*OS MENUS DE CIMA E DE BAIXO - PARA VÁRIAS PÁGINAS*/
+
+@media screen and (max-width: 1080px){
+    .menu ul{
+        flex-direction: column; /*Os itens do menu ficarão em coluna*/
+    }
+
+    .alinhamento{
+        flex-direction: column; /*Os itens ficarão em coluna*/
+    } /*Não funciona se colocar o semtitulo*/
+
+    .menurodape ul{
+        font-size: 0.7em;
+       
+    }
+}
+
+/*PARA A HOME*/
+
+@media screen and (max-width: 1080px){
+
+    .o_que_e_check_point{
+        margin-bottom: -4em;
+         margin-left: 2em;
+         max-width: 90vw;
+         font-size: 1.1em;
+    }
+
+    .imagem_legenda_garota{
+        width: 70vw;
+        margin-left: 15em;
+    }
+
+    .funcionalidades h2{
+        margin-bottom: 0.5em;
+        font-size: 2.5em;
+    } 
+
+    .para_que_serve{
+        max-width: 100vw;
+        margin-left: 2em;
+        margin-bottom: -1em;
+        font-size: 1.1em; 
+    }
+
+    .imagem_legenda_computador_um{
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imagem_legenda_computador_dois{
+        margin-top: -2em;
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .o_que_exatamente{
+        margin-top: -4em;
+        margin-left: 2em;
+        max-width: 90vw;
+        margin-bottom: 1em;
+        font-size: 1.1em;
+    }
+
+    .quem_pode_usar{
+        margin-top: -10em;
+        max-width: 90vw;
+        margin-left: 2em;
+        font-size: 1.1em;
+        margin-bottom: 1em;
+    }
+
+    .imagem_legenda_computador_tres{
+        margin-top: -2em;
+        width: 60vw;
+        margin-left: 6em;
+        margin-bottom: 2em;
+    }
+
+    .planos_de_uso h2{
+        margin-bottom: 1em;
+    } 
+
+    .planos_de_uso{
+        font-size: 0.8em;
+    }
+
+ }
+
+
+/*OS MENUS DE CIMA E DE BAIXO - PARA VÁRIAS PÁGINAS*/
+
+@media screen and (max-width: 600px){
+    .menu ul{
+        flex-direction: column; /*Os itens do menu ficarão em coluna*/
+    }
+
+    .alinhamento{
+        flex-direction: column; /*Os itens ficarão em coluna*/
+    } /*Não funciona se colocar o semtitulo*/
+
+    .menurodape ul{
+        font-size: 0.7em;
+       
+    }
+
+}
+
+/* PARA A HOME */
+
+@media screen and (max-width: 600px){
+
+    .o_que_e_check_point{
+        margin-bottom: -4em;
+         margin-left: 2em;
+         max-width: 80vw;
+         font-size: 1.1em;
+    }
+
+    .imagem_legenda_garota{
+        width: 100vw;
+        margin-left: 4em;
+    }
+
+    .funcionalidades h2{
+        margin-bottom: 0.5em;
+        font-size: 2.5em;
+    } 
+
+    .para_que_serve{
+        max-width: 100vw;
+        margin-left: 2em;
+        margin-bottom: -1em;
+        font-size: 1.1em; 
+    }
+
+    .imagem_legenda_computador_um{
+        width: 80vw;
+        margin-left: 6em;
+    }
+
+    .imagem_legenda_computador_dois{
+        margin-top: -2em;
+        width: 80vw;
+        margin-left: 6em;
+    }
+
+    .o_que_exatamente{
+        margin-top: -4em;
+        margin-left: 2em;
+        max-width: 80vw;
+        margin-bottom: 1em;
+        font-size: 1.1em;
+    }
+
+    .quem_pode_usar{
+        margin-top: -10em;
+        max-width: 80vw;
+        margin-left: 2em;
+        font-size: 1.1em;
+        margin-bottom: 1em;
+    }
+
+    .imagem_legenda_computador_tres{
+        margin-top: -2em;
+        width: 80vw;
+        margin-left: 6em;
+        margin-bottom: 2em;
+    }
+
+    .planos_de_uso h2{
+        margin-bottom: 1em;
+    } 
+
+    .planos_de_uso{
+        font-size: 0.8em;
+    }
+
+ }

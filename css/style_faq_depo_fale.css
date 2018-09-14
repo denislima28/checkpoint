@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Impede que o padding faça o espaço se expandir.*/
+    font-family: Noto Serif KR;
+    text-decoration: none; /*Por algum motivo, esse comando só fez efeito sendo
+                                colocado aqui.*/
+}/*Serve para várias páginas*/
+
+.top-bar{
+    width: 100%;
+    height: auto;
+    background: #1D6672;
+    display: flex; /*Pode ser usado para deixar o logo ao lado do texto*/
+    padding: 1% 1%;
+    color: #fff;
+    justify-content: space-between;
+}/*Serve para várias páginas*/
+
+.texto_header{
+    font-size: 25px;
+    margin-left: 3%;
+    margin-top: 2%;
+}/*Serve para várias páginas*/
+
+.maos_relogio{
+    background: url('../imagens/maos_relogio.png'); /*Estamos dentro da pasta css. O .. serve para sair da pasta css e entrar na pasta imagens*/
+    background-size: cover; /*Faz a imagem até caber no banner*/
+    background-position: center; /*Ajusta a posição da imagem.*/
+    height: 100vh;
+}/*Serve para várias páginas*/
+
+.menu{
+    background: #1DB9DD;
+}/*Serve para várias páginas*/
+
+.partemenudiferente{
+     /*background: #1D6672;  Tentar em branco para ver se fica legal.*/
+    background: white;
+}/*Serve para várias páginas*/
+
+.menu ul{
+    list-style-type: none;
+    height: 100%;
+    display: flex; /*Neste caso, deixa os itens da lista um do lado do outro*/
+    text-align: center;
+}/*Serve para várias páginas*/
+
+.menu ul li{
+    /*flex: 1; Faz os itens da lista terem o mesmo espaçamento*/
+     /*background: #444; pode ser usado para visualizar resultados de comandos, não no código final */
+    text-align: center; /*Ver se realmente tem efeito*/
+    padding: 1em 1.9em;
+    margin-left: auto;
+    margin-right: auto;
+}/*Serve para várias páginas*/
+
+.menu ul a{
+    color: black; /*Cor das letras*/
+    text-decoration: none; /*Tira o azul e o sublinhado dos itens da lista*/
+    font-size: 1.8em;
+    padding: 0.5em 0.5em; /*Aumenta a área clicável*/
+    /*background: red;   Usado para verificar o espaço da área clicável*/
+}/*Serve para várias páginas*/
+
+.menu ul :hover{
+    background: #FF0000;
+} 
+/*O fundo sobre o qual a palavra está só fica dessa cor quando passa o mouse.*/
+/*Serve para várias páginas*/
+
+.menu ul a:hover{
+    color: white;
+} /*Serve para várias páginas*/
+
+.alinhamento{
+    display: inline-flex;
+} /*Coloca os textos e imagens na mesma linha. Serve para várias imagens e textos da página*/
+/*Serve para várias páginas*/
+
+.rodape{
+    background: #1D6672;
+    margin-top: 4em;
+    text-align: center;
+}
+
+.imagemrodape{
+   
+}
+
+.menurodape{
+    width: 100%;
+    height: auto;
+    padding: 1% 1%;
+    /*justify-content: space-between;*/
+    background: #1D6672;
+}/*Serve para várias páginas*/
+
+.menurodape ul{
+    list-style-type: none;
+    height: 100%;
+    display: flex; /*Neste caso, deixa os itens da lista um do lado do outro*/
+}/*Serve para várias páginas*/
+
+.menurodape ul li{
+    /*flex: 1; Faz os itens da lista terem o mesmo espaçamento*/
+     /*background: #444; pode ser usado para visualizar resultados de comandos, não no código final */
+    padding: 1em 1em;
+    margin-left: auto;
+    margin-right: auto;
+}/*Serve para várias páginas*/
+
+.menurodape ul a{
+    color: white; /*Cor das letras*/
+    text-decoration: none; /*Tira o azul e o sublinhado dos itens da lista*/
+    font-size: 1em;
+    padding: 0.5em 0.5em; /*Aumenta a área clicável*/
+    /*background: red;   Usado para verificar o espaço da área clicável*/
+}/*Serve para várias páginas*/
+
+/* *************************************************************************************************************
+*************************************************************************************************************
+*************************************************************************************************************
+PÁGINA FAQ */
+
+.duvidas{
+    box-shadow: 1px 1px 2px 2px black;
+    max-width: 90vw; /*Limita o tamanho máximo da largura do espaço do texto.*/
+    font-size: 1.2em;
+    text-align: justify;
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+    padding: 1em 1em;
+}
+
+.texto_de_baixo{
+    max-width: 78vw; /*Limita o tamanho máximo da largura do espaço do texto.*/
+    font-size: 2em;
+    text-align: justify;
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+    padding: 1em 1em;
+    text-align: center;
+}
+
+
+/****************************************************************************************************************************
+****************************************************************************************************************************
+***************************************************************************************************************************
+****************************************************************************************************************************
+ PÁGINA DEPOIMENTOS */
+
+.imagem_foto_pessoa_um{
+    margin-left: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+ }
+
+.depoimento{
+    max-width: 70vw;
+    font-size: 1.3em;
+    margin-left: 3em;
+    margin-top: 2em;
+    text-align: justify;
+}
+
+.imagem_foto_pessoa_dois{
+    margin-left: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+ }
+
+ .imagem_foto_pessoa_tres{
+    margin-left: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+ }
+
+ /****************************************************************************************************************************
+****************************************************************************************************************************
+***************************************************************************************************************************
+****************************************************************************************************************************
+ PÁGINA FALE CONOSCO*/
+
+.formulario{
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+} /*Colocam os itens do formulário no centro da seção.*/
+
+.formulario form{
+    width: 80%;
+    display: flex;
+    flex-direction: column; /*Coloca os itens em forma de coluna*/
+    margin-bottom: 5em;
+}
+
+.formulario form input[type="button"]{
+    width: 10%;
+    height: 2em;
+    margin: auto;
+    background: #FF0000;
+    border: 10em;
+    color: #fff;
+    padding: 0.2em 0em 0.5em 0em;
+} /*Serve para configurar apenas os itens do form que são botÕes*/
+
+.formulario form input{
+    width: 50%;
+    height: 2em;
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding: 0.5em 0.5em;
+}
+
+.formulario textarea{
+    font-size: 1.5em;
+    padding: 0.5em 0.5em;
+    border-radius: 5px; /*Arredonda os itens*/
+    resize: none; /*Impede que o textarea seja aumentado ou diminuído pelo usuário*/
+}
